@@ -29,8 +29,28 @@
     />
 
     <title>porfolio</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      #canvas {
+        background-color: #191d2b;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -10;
+      }
+    </style>
   </head>
   <body class="main-content">
+    <canvas id="canvas"></canvas>
     <header class="section sec1 header" id="home">
       <div class="header-content">
         <div class="left-header">
@@ -225,7 +245,7 @@
       </section>
       <section class="section sec3 porfolio" id="portoflio">
         <div class="main-title">
-          <h2>my<span> portoflio</span><span class="bg-text">my work</span></h2>
+          <h2>my<span> portoflio</span><span class="bg-text">my <br> work</span></h2>
         </div>
         <p class="port-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
@@ -293,10 +313,12 @@
           </div>
         </div>
       </section>
-      <section class="section sec4 active" id="blogs">
+      <section class="section sec4" id="blogs">
         <div class="blogs-cont">
           <div class="main-title">
-            <h2>my <span>blogs</span><span class="bg-text">my <br />journey</span></h2>
+            <h2>
+              my <span>blogs</span><span class="bg-text">my <br />journey</span>
+            </h2>
           </div>
           <div class="blogs">
             <div class="blog">
@@ -362,7 +384,85 @@
           </div>
         </div>
       </section>
-      <section class="section sec5 contact" id="contact"></section>
+      <section class="section sec5 contact active" id="contact">
+        <div class="contact-container">
+          <div class="main-title">
+            <h2>
+              contact <span> me </span><span class="bg-text">my <br> informations</span>
+            </h2>
+          </div>
+          <div class="contact-content-con">
+            <div class="left-con"> 
+              <h4>contact me here</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia at praesentium, quo debitis tempora nisi eligendi eaque aperiam ipsum </p>  
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    location :
+                  </div>
+                  <p>
+                     sidi bel abbes algeria
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    location :
+                  </div>
+                  <p>
+                     sidi bel abbes algeria
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    location :
+                  </div>
+                  <p>
+                     sidi bel abbes algeria
+                  </p>
+                </div>
+
+
+              </div>
+              <div class="contact-icons">
+                <div class="contact-icon">
+                  <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="right-con">
+              <form action="" class="contact-form" method="post">
+                <div class="input-control inc">
+                  <input type="text" required placeholder="your first name">
+                  <input type="text" required placeholder="your email">
+                </div>
+                <div class="input-control">
+                  <input type="text" required placeholder="subject">
+                </div>
+                <div class="input-control">
+                  <textarea name="" id="" cols="15" rows="8"></textarea>
+                </div>
+                <div class="btnss" >
+                <div class="submit-btn">
+                  <a href="" class="main-btn btn-2">
+                    <span class="btn-text">download CV</span>
+                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                  </a>
+                </div>
+                <button href="" class="main-btn btn-2">
+                  <span class="btn-text">submit</span>
+                  <span class="btn-icon"><i class="fas fa-comment"></i></span>
+                </button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div class="controlls">
@@ -382,6 +482,12 @@
         <i class="fas fa-envelope-open"></i>
       </div>
     </div>
+
+    <!-- <div class="theme-btn">
+      <i class="fas fa-adjust"></i>
+    </div> -->
+
     <script src="ap.js"></script>
+    <script src="background.js"></script>
   </body>
 </html>

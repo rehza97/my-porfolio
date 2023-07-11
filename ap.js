@@ -9,8 +9,8 @@ function Pagetrans() {
     console.log('hello')
         sectBtn[i].addEventListener('click' , function(){
             let currentbtn = document.querySelectorAll('.active-btn');
-            currentbtn[0].className = currentbtn[0].className.replace('active-btn' , '')
-            this.className += 'active-btn'
+            currentbtn[0].className = currentbtn[0].className.replace('active-btn' , ' ')
+            this.className += ` active-btn`
         })
         
     }
@@ -34,4 +34,6 @@ function Pagetrans() {
         }
     })
 }
-Pagetrans();
+// Pagetrans();
+
+window.addEventListener('load', Pagetrans() );
