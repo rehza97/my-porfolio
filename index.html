@@ -40,6 +40,8 @@
       }
       #canvas {
         background-color: #191d2b;
+         /*background-color: #e7e7e7; */
+        
         width: 100%;
         height: 100%;
         position: fixed;
@@ -47,15 +49,42 @@
         left: 0;
         z-index: -10;
       }
+      .hero-img {
+        margin-left: 5rem;
+        -webkit-animation: morph 8s ease-in-out infinite;
+        animation: morph 8s ease-in-out infinite;
+        background-image: url(/img/photo.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid #2d2e32;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        height: 35rem;
+        width: 35rem;
+        
+        transition: all 1s ease-in-out;
+    }
+      @keyframes morph {
+        0% {
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+        
+        50% {
+            border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+        }
+        100% {
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+    }
     </style>
   </head>
   <body class="main-content">
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas" class="" ></canvas>
     <header class="section sec1 header active " id="home">
       <div class="header-content">
         <div class="left-header">
-          <div class="h-shape"></div>
-          <div class="image"><img src="img/pic.png" alt="" /></div>
+         
+          <div class="hero-img"></div>
         </div>
         <div class="right-header">
           <h1 class="name">
@@ -482,10 +511,11 @@
         <i class="fas fa-envelope-open"></i>
       </div>
     </div>
-
-    <!-- <div class="theme-btn">
+<!-- 
+    <div class="theme-btn">
       <i class="fas fa-adjust"></i>
     </div> -->
+
 
     <script src="ap.js"></script>
     <script src="background.js"></script>

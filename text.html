@@ -65,13 +65,13 @@
         transition-delay: var(--d);
       }
       .wrapper.active .item:nth-child(1) {
-        transform: translateX(-65px) translateY(-165px);
+       transform: translateY(260px);
       }
       .wrapper.active .item:nth-child(2) {
-        transform: translateY(-65px);
+        transform: translateY(192px);
       }
       .wrapper.active .item:nth-child(3) {
-        transform: translateX(65px);
+        transform: translateY(130px);
       }
       .wrapper.active .item:nth-child(4) {
         transform: translatey(65px);
@@ -142,7 +142,7 @@
           iconEl.classList.replace("ri-close-line", "ri-share-line");
         }
       };
-      btnEl.addEventListener("click", toggleOptions);
+      btnEl.addEventListener("mouseover", toggleOptions);
     </script>
   </body>
 </html>
