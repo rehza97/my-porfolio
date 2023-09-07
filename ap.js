@@ -6,7 +6,7 @@ const allSections = document.querySelector('.main-content')
 function Pagetrans() {
     // btn active class
     for (let i = 0; i < sectBtn.length; i++) {
-    console.log('hello')
+   
         sectBtn[i].addEventListener('click' , function(){
             let currentbtn = document.querySelectorAll('.active-btn');
             currentbtn[0].className = currentbtn[0].className.replace('active-btn' , ' ')

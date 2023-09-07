@@ -179,7 +179,7 @@ function draw() {
 resize();
 draw();
 
-while (boxes.length < 15) {
+while (boxes.length < 1) {
     boxes.push(new Box());
 }
 
